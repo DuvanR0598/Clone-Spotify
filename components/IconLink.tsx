@@ -17,7 +17,7 @@ const IconLink = ({ text, ActiveIcon, InactiveIcon, isActive=false }: IconLinkPr
     );
 };
 
-export { IconLink };
+export { IconLink }; 
 
 
 

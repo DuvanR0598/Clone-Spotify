@@ -11,11 +11,16 @@ const PlaylistContainer = ({name}: PlaylistContainerProps) =>{
                 <span className="text-white text-2xl font-bold">{name}</span>
                 <span>Show all</span>
             </div>
-            <div className="flex">
-             <PlaylistCard image="/images/tth.jpeg" tittle="Today´s top hits" description="Jung kook is on too of the Hottest 50!"/>  
+            <div className="flex gap-3">
+             <PlaylistCard image="/images/tth.jpeg" 
+             tittle="Today´s top hits" 
+             description="Jung kook is on too of the Hottest 50!"/>  
+             <PlaylistCard image="/images/all-out.jpeg" 
+             tittle="All Out 2010s" 
+             description="The biggest songs of the 2010s"/> 
             </div>
         </section>
-    );
+    ); 
 };
 
 export { PlaylistContainer };

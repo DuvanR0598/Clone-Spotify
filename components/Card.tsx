@@ -15,5 +15,5 @@ const Card = ({buttonText, tittle, description}: CardProps) => {
         </div>
     );
 };
-
+ 
 export { Card };
