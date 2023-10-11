@@ -2,11 +2,9 @@ name: CI-CD para NextJS
 
 on:
   push:
-    branches:
-      - master
+    branches: [master]
   pull_request:
-    branches:
-      - master
+    branches: [master]
 
 jobs:
   lint:
