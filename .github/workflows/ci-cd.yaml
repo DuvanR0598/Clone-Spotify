@@ -1,27 +1,27 @@
 name: CI-CD para NextJS
 
 on:
-  
- 
-push:
+  push:
+    branches: [master]
+  pull_request:
     
    
 branches: [master]
-  pull_request:
-    branches: [master]
 
 jobs:
   lint:
-    
-   
-name: Lint
+    name: Lint
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      
+     
+- name: Checkout code
         uses: actions/checkout@v2
-      - name: Install dependencies
+      
+     
+- name: Install dependencies
         run: npm install
-      - name: Lint
-        
-       
-run: npm run lint
+      
+     
+- name: Lint
+        run: npm run lint
