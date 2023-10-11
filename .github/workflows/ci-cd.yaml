@@ -8,11 +8,11 @@ on:
 
 jobs:
   lint:
-    name: Lint
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install
-      - name: Lint
-        run: npm run lint
+      name: Lint
+      runs-on: ubuntu-latest
+      steps:
+          - uses: actions/checkout@v2
+          - name: Install dependencies
+            run: npm install
+          - name: Lint
+            run: npm run lint
