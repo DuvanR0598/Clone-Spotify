@@ -1,4 +1,4 @@
-name: CI-CD para NextJS
+name: CI-CD para NextJS1
 
 on:
   push:
@@ -11,8 +11,7 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Install dependencies
         run: npm install
       - name: Lint
